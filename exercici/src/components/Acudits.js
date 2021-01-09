@@ -34,7 +34,7 @@ this.setState({jokes: result.data.joke})
             <br/>
             <br/>
             <br/>
-            <div>{console.log(this.state.jokes)}</div> 
+            <div>{this.state.jokes}</div> 
           </div>
       )
   }
