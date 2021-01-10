@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header(){
     return(
-        <h1 >Preparat per riure?</h1>
+        <h1 style={{textAlign: 'center'}} >Preparat per riure? &#129315;</h1>
     )
 
 }

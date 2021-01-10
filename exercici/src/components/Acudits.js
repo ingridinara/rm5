@@ -30,11 +30,11 @@ this.setState({jokes: result.data.joke})
   render() {
       return (
           <div>
-            <button onClick={this.show} >Següent acudit</button>
+            <br/>
+            <div style={{textAlign: 'center'}}>{this.state.jokes}</div> 
             <br/>
             <br/>
-            <br/>
-            <div>{this.state.jokes}</div> 
+            <button onClick={this.show}  style={{color: 'white', fontWeight: 'bold', borderRadius: '4px', backgroundColor:'blue', padding: 4, marginLeft: '30%'}}>Següent acudit</button>
           </div>
       )
   }

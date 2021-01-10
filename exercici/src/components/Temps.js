@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import {fetch} from './Fetch';
 
 
 const Temps = () => {
-     const [query, setQuery] = useState('Barcelona'); 
+     const [query, setQuery] = useState(''); 
     const [weather, setWeather] = useState({});
     
     const search = async (e) => {
@@ -12,7 +12,7 @@ const Temps = () => {
             const data = await fetch(query);
 
             setWeather(data);
-           setQuery('Barcelona'); 
+           setQuery(''); 
         }
     }
 
@@ -23,11 +23,11 @@ const Temps = () => {
             <br/>
             <br/>
             <br/>
-            <label>Mire la temperatura en tu ciudad:</label>
+            <label>La temperatura en tu ciudad:</label>
             <br/>
             <input type="text"className="search"  value={query}  
               onChange={(e) => setQuery(e.target.value)}onKeyPress={search}  
-            
+                placeholder="Nombre de la ciudad..."
              />
             {weather.main && (
                 <div >

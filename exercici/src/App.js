@@ -10,18 +10,32 @@ function App() {
         backgroundImage: "url(" + " https://picsum.photos/seed/picsum/1400/1000" + ")",
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat', 
-        opacity: 0.6 
-  
+        opacity: 0.6, 
+        position: 'relative', 
+        height: 400, 
+        paddingLeft: 10, 
+        fontWeight: 'bold'
         } }>
+          <Temps/>
           <div style={{
             opacity:1, 
-            color: 'darkblue', 
+            color: 'black', 
             paddingTop: 40,
-            paddingLeft: 200
+            paddingLeft: 50, 
+            paddingBottom: 60, 
+            paddingRight: 10, 
+            position: 'absolute', 
+            left: 200,
+            top: 60, 
+            backgroundColor: 'white',
+            borderRadius: '15px',
+            marginLeft: 70, 
+            marginRight: 10, 
+            
           }} >
           <Header/>
           <Acudits/>
-          <Temps/>
+         
         </div>
         </div>
     )
